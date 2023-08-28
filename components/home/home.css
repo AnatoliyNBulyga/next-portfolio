@@ -1,0 +1,250 @@
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.home {
+    height: 100vh;
+}
+
+.home__content {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10%;
+    align-items: center;
+    height: 60vh;
+    padding-left: 100px;
+}
+
+.home__img {
+    overflow: hidden;
+    order: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+.home__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =============== Data ================= */
+
+.home__title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--m-0-25);
+}
+
+.home__hand {
+    width: 38px;
+    height: 38px;
+    margin-left: 0.4rem;
+}
+
+.home__subtitle {
+    position: relative;
+    font-size: var(--h3-font-size);
+    padding-left: 5.4rem;
+    font-weight: var(--font-normal);
+    margin-bottom: var(--m-1);
+}
+
+.home__subtitle::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+}
+
+.home__description {
+    max-width: 400px;
+    margin-bottom: var(--m-3);
+}
+
+/* =============== SOCIALS ================= */
+
+.home__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-top: auto;
+}
+
+.home__socials::after {
+    content: "";
+    width: 1px;
+    height: 3rem;
+    background: var(--title-color);
+    margin-left: 9px;
+}
+
+.home__socials-icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.home__socials-icon:hover {
+    color: var(--title-color-dark);
+}
+
+/* =============== ANIMATIONS ================= */
+@keyframes profile_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) rotate(90deg);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(10%) rotate(90deg);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.typewriter .home__title {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .35rem solid var(--title-color); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation:
+            typing 10s steps(40, end) infinite,
+            blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    0% { width: 0 }
+    25% { width: 0 }
+    50% { width: 100% }
+    75% { width: 100% }
+    100% { width: 0 }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--title-color); }
+}
+
+/*!* =============== SCROLL DOWN ================= *!*/
+.scroll_down__wrap {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: flex-start;
+    animation: bounce 1s infinite;
+}
+
+.scroll_down {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--title-color-dark);
+}
+
+.scroll_down__icon {
+    transform: rotate(-90deg);
+    width: 24px;
+    height: 24px;
+}
+
+
+.scroll_down a {
+    font-size: var(--small-font-size);
+    color: var(--title-color-dark);
+}
+
+/* =============== MEDIA QUERIES (LARGE DEVICES) ================= */
+@media screen and (max-width: 960px) {
+    .home {
+        height: auto;
+    }
+
+    .home__content {
+        padding-top: 0;
+        padding-left: 0;
+        height: auto;
+        margin-bottom: 60px;
+    }
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 768px) {
+
+    .home__content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home__subtitle {
+        padding-left: 0;
+    }
+
+    .home__subtitle::before {
+        content: none;
+    }
+
+    .home__description {
+        max-width: max-content;
+    }
+
+    .home__img {
+        order: initial;
+        justify-self: center;
+        box-shadow: inset 0 0 0 6px rgba(255, 255, 255, .3);
+        width: 200px;
+        height: 200px;
+    }
+
+    .home__data {
+        grid-column: 1/3;
+    }
+
+    .home__line {
+        position: absolute;
+        top: 30px;
+        left: 5%;
+    }
+
+    .home__content {
+        margin-bottom: 0;
+    }
+
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+    .home.section {
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+}
+
+/* =============== MEDIA QUERIES (EXTRA SMALL DEVICES) ================= */
+@media screen and (max-width: 350px) {
+    .home__line {
+        left: 0;
+    }
+}
