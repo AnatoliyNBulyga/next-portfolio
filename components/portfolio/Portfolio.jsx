@@ -24,7 +24,7 @@ const data = [
     {
         id: 3,
         image: "/img/3.png",
-        title: "EBay clone",
+        title: "EBay shop clone",
         description: "Fullstack e-commerce app ebay shop clone",
         github: "https://github.com/AnatoliyNBulyga/next-supabase-ebay-c",
         demo: "https://ebay-c.vercel.app/"
@@ -33,9 +33,9 @@ const data = [
         id: 4,
         image: "/img/portfolio4.jpg",
         title: "Saas AI Platform",
-        description: "Fullstack rest api application based on Next.js",
-        github: "https://github.com",
-        demo: "https://github.com"
+        description: "Fullstack application using AI API",
+        github: "https://github.com/AnatoliyNBulyga/next-supabase-ai-assist",
+        demo: "https://ai-assist-rouge.vercel.app"
     }
 ]
 
