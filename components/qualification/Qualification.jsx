@@ -12,12 +12,13 @@ const Qualification = () => {
                 <div className="qualification__content">
 
                     <div className="qualification__data">
+
                         <div className="qualification__info text-right">
-                            <h3 className="qualification__title">Freelancer</h3>
-                            <span className="qualificatio__subtitle">Freelance.ru, Fl.ru, Freelancer.com</span>
+                            <h3 className="qualification__title">FullStack JS Dev</h3>
+                            <span className="qualificatio__subtitle">Incode Group</span>
                             <div className="qualification__calendar flex-end">
                                 <BsCalendar2 className="qualification__icon" />
-                                feb 2017 - sept 2018
+                                jun 2022 - Present
                             </div>
                         </div>
 
@@ -37,11 +38,11 @@ const Qualification = () => {
                         </div>
 
                         <div className="qualification__info">
-                            <h3 className="qualification__title">Junior Web Dev</h3>
-                            <span className="qualificatio__subtitle">Electronic Arts</span>
+                            <h3 className="qualification__title">FrontEnd Dev</h3>
+                            <span className="qualificatio__subtitle">Incode Group</span>
                             <div className="qualification__calendar">
                                 <BsCalendar2 className="qualification__icon" />
-                                sep 2018 - mar 2019
+                                aug 2021 - jun 2022
                             </div>
                         </div>
 
@@ -51,7 +52,7 @@ const Qualification = () => {
 
                         <div className="qualification__info text-right">
                             <h3 className="qualification__title">Middle Web Dev</h3>
-                            <span className="qualificatio__subtitle">Electronic Arts</span>
+                            <span className="qualificatio__subtitle">Electronic Team, Inc.</span>
                             <div className="qualification__calendar flex-end">
                                 <BsCalendar2 className="qualification__icon" />
                                 mar 2019 - jul 2021
@@ -74,24 +75,23 @@ const Qualification = () => {
                         </div>
 
                         <div className="qualification__info">
-                            <h3 className="qualification__title">FrontEnd Dev </h3>
-                            <span className="qualificatio__subtitle">Incode Group</span>
+                            <h3 className="qualification__title">Junior Web Dev</h3>
+                            <span className="qualificatio__subtitle">Electronic Team, Inc.</span>
                             <div className="qualification__calendar">
                                 <BsCalendar2 className="qualification__icon" />
-                                aug 2021 - jun 2022
+                                sep 2018 - mar 2019
                             </div>
                         </div>
 
                     </div>
 
                     <div className="qualification__data">
-
                         <div className="qualification__info text-right">
-                            <h3 className="qualification__title">FullStack Dev</h3>
-                            <span className="qualificatio__subtitle">Incode Group</span>
+                            <h3 className="qualification__title">Freelancer</h3>
+                            <span className="qualificatio__subtitle">Freelance.ru, Fl.ru, Freelancer.com</span>
                             <div className="qualification__calendar flex-end">
                                 <BsCalendar2 className="qualification__icon" />
-                                jun 2022 - Present
+                                feb 2017 - sept 2018
                             </div>
                         </div>
 
@@ -100,6 +100,7 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

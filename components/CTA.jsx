@@ -4,8 +4,8 @@ const CTA= () => {
     return (
         <div className="cta">
             <a
-                // href="/img/John-Cv.pdf"
-                // download
+                href="/img/MyCV.pdf"
+                download
                 className="btn"
             >
                 Download CV
